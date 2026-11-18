@@ -1,0 +1,9 @@
+project: savantenvs/frei0r
+target: frei0r_filter
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/frei0r_filter/testsuite
+cmds:
+  - cmd: /mayhem/frei0r_filter
+    libfuzzer: true
+    timeout: 10

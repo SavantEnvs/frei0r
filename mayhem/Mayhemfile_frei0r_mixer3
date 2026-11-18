@@ -1,0 +1,9 @@
+project: savantenvs/frei0r
+target: frei0r_mixer3
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/frei0r_mixer3/testsuite
+cmds:
+  - cmd: /mayhem/frei0r_mixer3
+    libfuzzer: true
+    timeout: 10
